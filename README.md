@@ -4,9 +4,11 @@ This tool is to be used to quickly customize the branding of Business Credit Rep
 ## How to set up the tool
 1. [Download Node.js](https://nodejs.org/en/)
 2. [Download Git](https://git-scm.com/downloads)
-3. Open the bcr-credit-app-customizer folder using your code editor.
-4. Open the bcr-credit-app-customizer folder using Git Bash.
-5. In your terminal, run the command `npm run transpile` to begin watching for SCSS changes.
+3. Download this Github Repo as a Zipped Folder.
+4. Extract the Zipped Folder.
+5. Open the bcr-credit-app-customizer folder using your code editor.
+6. Open the bcr-credit-app-customizer folder using Git Bash.
+7. In your terminal, run the command `npm run transpile` to begin watching for SCSS changes.
 
 ## How to use it
 1. Make the Credit Application elements match the client's brand colors by editing:
