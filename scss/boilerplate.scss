@@ -1,0 +1,442 @@
+@import 'styling/colors';
+@import 'styling/print';
+@import 'components/logo';
+@import 'components/labels';
+@import 'components/panels';
+@import 'components/form-fields';
+@import 'components/buttons';
+
+/* LOGO STYLES */
+
+#MainContent_divCreditApp img {
+    height: auto;
+    margin: 40px 0 0;
+    max-width: $logo-max-width;
+}
+
+#MainContent_divCreditApp > .text-center::after {
+    content: 'Credit Application';
+    position: relative;
+    margin: 15px 0 40px;
+    text-transform: $top-credit-application-text-capitalization !important;
+    font-weight: $top-credit-application-text-thickness !important;
+    font-size: $top-credit-application-text-size !important;
+    color: $top-credit-application-text-color;
+    border-bottom: $top-credit-application-text-bottom-border solid $top-credit-application-text-border-color;
+}
+
+/* PANEL STYLES */
+
+.panel-heading {
+    font-size: $section-heading-text-size;
+    font-weight: $section-heading-text-thinkness;
+    color: $section-heading-text-color !important;
+    text-transform: $section-heading-text-capitalization !important;
+    background-image: none !important;
+    background-color: $section-heading-bg-color !important;
+    border-top-left-radius: $section-heading-border-curve !important;
+    border-top-right-radius: $section-heading-border-curve !important;
+}
+
+.panel {
+    box-shadow: none;
+    background-color: $section-background-color;
+    border-radius: $section-heading-border-curve !important;
+}
+
+.panel-default {
+    border-color: $section-border-color;
+}
+
+.panel-default > .panel-heading {
+    border-color: $section-border-color;
+}
+
+.panel-body {
+    font: normal normal normal 15px/1.4em helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+}
+
+#MainContent_divSupportingDocs .panel-footer {
+    display: none;
+}
+
+.panel-footer {
+    background-color: transparent !important;
+    border: none;
+}
+
+.panel-footer label {
+    margin: 0px !important;
+}
+
+/* QUESTION STYLES */
+
+label {
+    font-weight: 300;
+    color: $base-text-color;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.panel:not(#MainContent_divSupportingDocs):not(#MainContent_divTerms):not(#MainContent_divSubmit) label {
+    color: $form-field-label-color;
+    font-weight: $question-text-thinkness;
+    font-size: $question-text-size;
+}
+
+.form-control {
+    border: $form-field-input-border-width solid !important;
+    border-color: $form-field-input-border-color !important;
+    background-color: $form-field-bg-color;
+    box-shadow: none;
+    border-radius: $form-field-input-curve;
+    color: $form-field-text-color;
+    padding: $form-field-input-padding;
+    line-height: normal;
+    font-weight: $form-field-input-text-thickness;
+    font-size: $form-field-text-size;
+    height: inherit;
+}
+
+.form-control:focus {
+    border: $form-field-input-border-focus-width solid !important;
+    border-color: $form-field-input-border-focus-color !important;
+    background-color: $form-field-bg-focus-color;
+    box-shadow: none;
+}
+
+/* BUTTON STYLES */
+
+.btn-success {
+    background-image: -webkit-linear-gradient(top, $submit-button-bg-color 40%, $submit-button-bg-color 100%);
+    background-image: linear-gradient(to bottom, $submit-button-bg-color 0%, $submit-button-bg-color 100%);
+    padding: $submit-button-padding;
+    border: $submit-button-border-width solid;
+    border-color: $submit-button-border-color;
+    border-radius: $submit-button-border-radius;
+    font-weight: $submit-button-text-thinkness;
+    text-transform: $submit-button-text-capitalization;
+    font-size: $submit-button-text-size;
+    color: $submit-button-text-color !important;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-image: -webkit-linear-gradient(top, $submit-button-bg-hover-color 40%, $submit-button-bg-hover-color 100%);
+    background-image: linear-gradient($submit-button-bg-hover-color 40%, $submit-button-bg-hover-color 100%);
+    box-shadow: none;
+    border-color: $submit-button-border-hover-color;
+    color: $submit-button-text-hover-color !important;
+}
+
+.btn-primary {
+    background-image: -webkit-linear-gradient(top, $other-button-bg-color 40%, $other-button-bg-color 100%);
+    background-image: linear-gradient(to bottom, $other-button-bg-color 0%, $other-button-bg-color 100%);
+    padding: $other-button-padding;
+    border: $other-button-border-width solid;
+    border-color: $other-button-border-color;
+    border-radius: $other-button-border-radius;
+    font-weight: $other-button-text-thinkness;
+    text-transform: $other-button-text-capitalization;
+    font-size: $other-button-text-size;
+    color: $other-button-text-color !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-image: -webkit-linear-gradient(top, $other-button-bg-hover-color 40%, $other-button-bg-hover-color 100%);
+    background-image: linear-gradient($other-button-bg-hover-color 40%, $other-button-bg-hover-color 100%);
+    box-shadow: none;
+    border-color: $other-button-border-hover-color;
+    color: $other-button-text-hover-color !important;
+}
+
+.btn-size-lg {
+    width: inherit !important;
+}
+
+.btn-size-md {
+    width: auto !important;
+}
+
+#MainContent_btnSubmitRequest {
+    margin-top: 30px;
+}
+
+/* WARNING MESSAGE STYLES */
+
+.panel-warning > .panel-heading,
+.alert-warning {
+    color: $warning-message-text-color;
+    background-color: $warning-message-bg-color;
+    border-color: $warning-message-bg-color;
+    background-image: -webkit-linear-gradient(top, $warning-message-bg-color 0%, $warning-message-bg-color 50%);
+    background-image: linear-gradient(to bottom, $warning-message-bg-color 0%, $warning-message-bg-color 50%);
+    margin: 0 auto !important;
+    padding: 40px !important;
+    border-radius: 0;
+    width: 500px;
+}
+
+/* GENERAL TEXT STYLES */
+
+#MainContent_lblTerms,
+#MainContent_SignatureControl_divSignatureBlock small,
+#MainContent_uplSupportingDocs {
+    color: $base-text-color;
+}
+
+#MainContent_lnkTerms {
+    color: $link-color;
+    text-decoration: underline;
+}
+
+#MainContent_lnkTerms:hover {
+    text-decoration: none;
+}
+
+/* RESPONSIVE STYLES */
+
+@media only screen and (max-width: 750px) {
+    #MainContent_divCreditApp img {
+        width: 100%;
+    }
+
+    #divMainContainer .row {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        padding: 0px;
+        width: 100% !important;
+    }
+
+    #MainContent_divCreditApp > .text-center::after {
+        font-size: 4rem !important;
+    }
+
+    #MainContent_SignatureControl_divSignatureBlock > div:not(.SigWrapper) {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    #MainContent_SignatureControl_divSignatureBlock > div:not(.SigWrapper) button:first-child {
+        margin-bottom: 15px;
+    }
+
+    #MainContent_divSubmit .text-center,
+    #MainContent_divSupportingDocs .col-sm-4 {
+        display: flex;
+    }
+
+    #MainContent_btnUploadDoc,
+    #MainContent_btnSubmitRequest {
+        flex-grow: 1;
+    }
+
+    .panel-heading {
+        text-align: center;
+    }
+
+    #divMainContainer .col-sm-6,
+    #divMainContainer .col-sm-3 {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    #MainContent_divTerms .panel-body,
+    #MainContent_divSubmit .panel-body {
+        padding: 15px !important;
+    }
+
+    .panel-body {
+        padding: 15px 0px;
+    }
+}
+
+/* P&J BASE STYLE & LAYOUT OVERRIDES */
+
+#divMainContainer {
+    border: none;
+    padding: 0px 15px;
+}
+
+#divMainContainer .row {
+    display: inline-block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 0 10px;
+    padding: 0px 5px;
+    width: 50%;
+}
+
+#divMainContainer .col-sm-6,
+#divMainContainer .col-sm-3 {
+    padding: 0px;
+    width: 100%;
+}
+
+.text-right {
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+#divMainContainer > div:last-child {
+    margin: 0px !important;
+}
+
+.requiredEffects {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    color: black;
+}
+
+.glyphicon-star:before {
+    display: none;
+}
+
+.Help:after {
+    content: "*";
+    font-family: Verdana, Arial, Helvetica, Sans-Serif;
+    margin-left: 0px;
+    color: #af001f;
+    font-weight: bold;
+}
+
+#MainContent_divCaptcha,
+#MainContent_divCaptcha > .col-sm-12 {
+    padding: 0px !important;
+}
+
+#divVersion {
+    display: none;
+}
+
+/* SUPPORTING DOCUMENTATION STYLE OVERRIDES */
+
+#MainContent_divSupportingDocs .panel-body .NoPrint .col-sm-8 {
+    width: 100% !important;
+    padding: 0px;
+}
+
+#MainContent_divSupportingDocs .panel-body .NoPrint .col-sm-4 {
+    padding: 0px;
+}
+
+#MainContent_divSupportingDocs .panel-body .NoPrint .col-sm-4 input {
+    margin-top: 15px;
+}
+
+#MainContent_divSupportingDocs .panel-body .row:not(.NoPrint) {
+    width: 100%;
+    display: flex !important;
+    margin: 15px 0;
+    padding: 0px;
+}
+
+#MainContent_divSupportingDocs .panel-body .row:not(.NoPrint) .col-sm-8 {
+    width: 100%;
+    padding: 0px;
+}
+
+/* END OF SUPPORTING DOCUMENTATION STYLE OVERRIDES */
+
+#MainContent_divCaptcha div:nth-child(1) {
+    margin: 0px !important;
+}
+
+#MainContent_divSubmit .text-center {
+    text-align: left;
+}
+
+#signature-pad {
+    background: #fff;
+}
+
+.SigWrapper {
+    margin-bottom: 15px !important;
+}
+
+#MainContent_divCreditApp > .text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#MainContent_divCreditApp > .text-center::after {
+    content: 'Credit Application';
+    position: relative;
+    margin: 15px 0 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 31px;
+}
+
+/* PRINT OVERRIDES */
+
+@media print {
+
+    #divMainContainer .row,
+    .SigWrapper {
+        page-break-inside: avoid;
+    }
+
+    #MainContent_divCreditApp img {
+        width: $print-logo-max-width;
+    }
+
+    #MainContent_divCreditApp > .text-center::after {
+        font-size: $print-top-credit-application-text-size;
+        margin: $print-top-credit-application-margin;
+    }
+    
+    .panel-default {
+        margin: $print-panel-margin;
+    }
+
+    .panel-heading {
+        font-size: $print-section-heading-text-size;
+        padding: $print-section-heading-padding;
+    }
+
+    .panel:not(#MainContent_divSupportingDocs):not(#MainContent_divTerms):not(#MainContent_divSubmit) label {
+        font-size: $print-question-text-size;
+    }
+
+    .form-control {
+        border: $print-form-field-input-border-width solid !important;
+        padding: $print-form-field-input-padding;
+        font-weight: $print-form-field-input-text-thickness;
+        font-size: $print-form-field-text-size;
+    }
+    
+    #MainContent_divCaptcha {
+        display: none !important;
+    }
+
+    .SigWrapper {
+        margin: 0px !important;
+    }
+
+    #MainContent_SignatureControl_divSignatureBlock small,
+    #MainContent_divSupportingDocs .NoPrint,
+    #MainContent_divSignatureBlock > .panel-heading,
+    #MainContent_SignatureControl_divSignatureBlock > div:not(.SigWrapper) button {
+        display: none !important;
+    }
+
+    #MainContent_divCreditApp > .text-center::after {
+        color: $top-credit-application-text-color !important;
+    }
+
+    .panel:not(#MainContent_divSupportingDocs):not(#MainContent_divTerms):not(#MainContent_divSubmit) label {
+        color: $form-field-label-color !important;
+        font-weight: $question-text-thinkness;
+        font-size: $question-text-size;
+    }
+}

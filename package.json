@@ -1,0 +1,14 @@
+{
+  "name": "credit-app-sass-to-css",
+  "version": "1.0.0",
+  "description": "SASS to CSS tooling for BCR Credit App Styling",
+  "main": "index.html",
+  "scripts": {
+    "transpile": "node-sass -w scss -o css"
+  },
+  "author": "Shadow Smith",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
