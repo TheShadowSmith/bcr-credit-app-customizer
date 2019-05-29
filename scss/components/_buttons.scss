@@ -1,13 +1,13 @@
 // Primary Button Styles
-$submit-button-text-thinkness: bold;
-$submit-button-text-capitalization: capitalize;
-$submit-button-text-size: 1.8rem;
+$submit-button-text-thinkness: normal;
+$submit-button-text-capitalization: uppercase;
+$submit-button-text-size: 1em;
 $submit-button-border-width: 0px;
 $submit-button-border-radius: 0;
-$submit-button-padding: 2rem 6rem;
+$submit-button-padding: 0.5em 1.6em;
 
 // Other Button Styles
-$other-button-text-thinkness: bold;
+$other-button-text-thinkness: normal;
 $other-button-text-capitalization: capitalize;
 $other-button-text-size: $submit-button-text-size;
 $other-button-border-width: 1px;

@@ -79,6 +79,7 @@ label {
 }
 
 .panel:not(#MainContent_divSupportingDocs):not(#MainContent_divTerms):not(#MainContent_divSubmit) label {
+    text-transform: $question-text-capitalization;
     color: $form-field-label-color;
     font-weight: $question-text-thinkness;
     font-size: $question-text-size;
@@ -397,11 +398,14 @@ label {
     
     .panel-default {
         margin: $print-panel-margin;
+        border-color: $print-panel-borders;
     }
 
     .panel-heading {
         font-size: $print-section-heading-text-size;
         padding: $print-section-heading-padding;
+        color: $section-heading-text-color;
+        background-color: $section-heading-bg-color;
     }
 
     .panel:not(#MainContent_divSupportingDocs):not(#MainContent_divTerms):not(#MainContent_divSubmit) label {

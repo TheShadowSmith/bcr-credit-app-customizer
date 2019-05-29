@@ -1,33 +1,33 @@
 // Base Colors
 $base-text-color: #333335;
-$top-credit-application-text-color: #ffaf00;
+$top-credit-application-text-color: #000;
 $top-credit-application-text-border-color: transparent;
 $link-color: #45abd6;
 
 // Panel Colors
-$section-heading-bg-color: transparent;
-$section-heading-text-color: #782854;
+$section-heading-bg-color: #0f3456;
+$section-heading-text-color: #fff;
 $section-background-color: #fff;
-$section-border-color: transparent;
+$section-border-color: #E2E2E2;
 
 // Form Field Colors
-$form-field-label-color: #003c5c;
+$form-field-label-color: #000;
 $form-field-bg-color: transparent;
-$form-field-text-color: #003c5c;
-$form-field-input-border-color: #003c5c;
+$form-field-text-color: #495057;
+$form-field-input-border-color: #E2E2E2;
 
 // Form Field Focus Colors
 $form-field-bg-focus-color: #fff;
-$form-field-input-border-focus-color: #003c5c;
+$form-field-input-border-focus-color: #5c91ce;
     
 // Primary Button Colors
-$submit-button-bg-color: #782854;
+$submit-button-bg-color: #0d4b84;
 $submit-button-text-color: #fff;
 $submit-button-border-color: transparent;
   
 // Primary Button Hover Colors
 //$submit-button-bg-hover-color: darken( $submit-button-bg-color, 5%);
-$submit-button-bg-hover-color: #45abd6;
+$submit-button-bg-hover-color: darken( $submit-button-bg-color, 5%);
 $submit-button-text-hover-color: #fff;
 $submit-button-border-hover-color: darken( $submit-button-bg-hover-color, 5%);
 
@@ -42,5 +42,5 @@ $other-button-text-hover-color: #000;
 $other-button-border-hover-color: #E2E2E2;
 
 // Warning Message Colors
-$warning-message-bg-color: #ffaf00;
-$warning-message-text-color: #333335;
+$warning-message-bg-color: #ff8800;
+$warning-message-text-color: #fff;
