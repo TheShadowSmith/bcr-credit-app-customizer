@@ -7,7 +7,8 @@ This tool is to be used to quickly customize the branding of Business Credit Rep
 3. Extract the Zipped Folder.
 4. Open the bcr-credit-app-customizer-master folder using your code editor.
 5. Navigate to your bcr-credit-app-customizer-master folder using Node.js Command Prompt.
-6. In the Node.js Command Prompt, run the command `npm run transpile` to begin watching for SCSS changes.
+6. In the Node.js Command Prompt, run the command `npm install` to install all project depnedencies.
+7. In the Node.js Command Prompt, run the command `npm run transpile` to begin watching for SCSS changes.
 
 ## How to use it
 1. Make the Credit Application elements match the client's brand colors by editing:
