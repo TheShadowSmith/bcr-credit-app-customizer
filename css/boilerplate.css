@@ -81,6 +81,9 @@ label {
   background-color: #fff;
   box-shadow: none; }
 
+.text-danger {
+  color: #fff !important; }
+
 /* BUTTON STYLES */
 .btn-success {
   background-image: -webkit-linear-gradient(top, #0d4b84 40%, #0d4b84 100%);
